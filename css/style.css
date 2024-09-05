@@ -68,7 +68,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-    background: url('path/to/your/background-image.jpg') no-repeat center center/cover;
+    background: url('assets/images/hero-background.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 6rem 1rem;
     text-align: center;
@@ -95,33 +95,73 @@ nav ul li a:hover {
 
 /* Section Styling */
 section {
-    padding: 5rem 1rem;
-    text-align: center;
-    transition: background-color 0.5s ease;
+    padding: 3rem 1rem;
+    animation: fadeIn 1s ease-in-out;
 }
 
-section:hover {
-    background-color: #181818;
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-.project-card, .experience-card, .skills-card {
-    background-color: #252525;
-    padding: 2rem;
+/* Project Cards */
+.project-card {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
     margin: 1rem 0;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.project-card:hover, .experience-card:hover, .skills-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+.project-card:hover {
+    background-color: #2c2c2c;
+    transform: scale(1.02);
 }
 
-.project-card h3, .experience-card h3, .skills-card h3 {
+.project-card a {
+    color: #ff9800;
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: #fff;
+}
+
+/* Experience Cards */
+.experience-card {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.experience-card:hover {
+    background-color: #2c2c2c;
+    transform: scale(1.02);
+}
+
+.experience-card ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+}
+
+/* Skills Cards */
+.skills-card {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.skills-card h3 {
     color: #ff9800;
 }
 
+/* Contact Card */
 .contact-card {
     background-color: #252525;
     padding: 2rem;
